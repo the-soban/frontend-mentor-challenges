@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      padding: 0px;
+      margin: 0px;
+      background-color: hsl(30, 38%, 92%);
+    }
+    
+    #container{
+      width: 45%;
+      min-width: 44%;
+      max-width: 45%;
+      display: flex;
+      flex-direction: row;
+      margin: 60px auto 10px auto;
+      border: 1px solid white;
+      border-radius: 10px;
+      background-color: hsl(0, 0%, 100%);
+    }
+
+    .image{
+      border-radius: 10px 0px 0px 10px;
+      height: 100%;
+      width: 300px;
+
+    }
+
+    .product_details{
+      padding: 20px;
+    }
+
+    .heading{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
+      color: hsl(228, 12%, 48%);
+    }
+
+    .title{
+      font-family: 'Fraunces';
+      font-size: 2.3rem;
+      line-height: 2.0rem;
+      font-weight: 700;
+      color: hsl(212, 21%, 14%);
+      margin: 26px auto 30px auto;
+    }
+    
+    .description{
+      font-family: 'Montserrat';
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.2rem;
+      color: hsl(228, 12%, 48%);
+      justify-content: left;
+    }
+
+    .price{
+      display: flex;
+      /* flex-direction: column; */
+      align-items: center;
+      margin-top: 0px;
+    }
+
+    .current_price{
+      color: hsl(158, 36%, 37%);
+      font-family: 'Fraunces';
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    
+    .old_price{
+      color: hsl(228, 12%, 48%);
+      font-family: 'Montserrat';
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: line-through;
+      margin-left: 14px;
+    }
+    
+    .cart_btn>img{
+      color: hsl(0, 0%, 100%);
+      margin-right: 4px;
+    }
+    
+    .cart_btn{
+      background-color: hsl(158, 36%, 37%);
+      border: 0px;
+      border-radius: 8px;
+      margin: 30px auto 10px auto;
+      padding: 14px 0;
+      width: 100%;
+      text-align: center;
+      vertical-align:middle;
+      transition: 0.2s ease-out all;
+    }
+
+    .cart_btn:hover{
+      background-color: hsl(158, 50%, 15%);
+      cursor: pointer;
+    }
+
+    .cart_btn>span{
+      color: hsl(0, 0%, 100%);
+      font-family: 'Montserrat';
+      font-size: 1rem;
+      font-weight: 600;
+      /* line-height: 0.5rem; */
+      position: relative;
+      top: 50%;
+      left: 3%;
+    }
+    
+    .attribution{
+      margin-top: 20px;
+      font-family: 'Montserrat';
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: hsl(228, 12%, 28%);
+    }
+
+    .attribution>a{
+      text-decoration: none;
+      color: hsl(158, 36%, 37%);
+    }
+
+    @media screen and (max-width: 375px) {
+  body {
+    background-color: hsl(30, 38%, 92%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #container{
+    width: 82%;
+    min-width: 82%;
+    min-height: 545px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 60px auto 0 auto;
+  }
+
+  .image{
+    /* width: 290px; */
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    padding: 0;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+  }
+
+  .product_details{
+    padding: 24px;
+
+  }
+
+  .heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    text-align: start;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: hsl(228, 12%, 48%);
+  }
+  
+  .title{
+    text-align: start;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    margin: 18px auto 14px auto;
+  }
+  
+  .description{
+    text-align: start;
+  }
+
+  .current_price{
+    font-size: 2.0rem;
+    margin-top: 16px;
+  }
+
+  .cart_btn{
+    margin: 14px auto 0 auto;
+  }
+
+  .attribution{
+    font-size: 0.7rem;;
+  }
+
+}
+
+    
+
+  </style>
+</head>
+<body>
+
+  <main id="container">
+    <img class="image" src="./images/image-product-desktop.jpg" alt="perfume image">
+
+    <div class="product_details">
+  <h1 class="heading">Perfume</h1>
+
+  <h2 class="title">Gabrielle Essence Eau De Parfum</h2>
+  
+      <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+  
+
+      <div class="price">
+        <span class="current_price">$149.99</span>
+        <span class="old_price">$169.99</span>
+</div>
+
+<button class="cart_btn"><img src="./images/icon-cart.svg" alt="cart icon"><span>Add to Cart</span></button>
+  
+</div>  
+</main>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/the-soban" target="_blank">Soban Shafiq</a>.
+  </div>
+
+</body>
+</html>
