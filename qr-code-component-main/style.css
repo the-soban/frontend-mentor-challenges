@@ -58,6 +58,7 @@ html{
 
 .attribution{
     color: hsl(220, 15%, 55%);
+    margin-top: 20px;
 }
 
 .attribution a{
