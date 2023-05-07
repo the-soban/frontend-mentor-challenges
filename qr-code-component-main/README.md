@@ -32,7 +32,7 @@ Here's my solution for the [QR code component challenge on Frontend Mentor](http
 ### Links:
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [qr-code-component on Netlify](https://qr-code-componentfm.netlify.app)
 
 ## My process
 
