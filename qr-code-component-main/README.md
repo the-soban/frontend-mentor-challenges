@@ -31,7 +31,7 @@ Here's my solution for the [QR code component challenge on Frontend Mentor](http
 
 ### Links:
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-qr-code-component-with-html-css-5GYZU9RUYl)
 - Live Site URL: [qr-code-component on Netlify](https://qr-code-componentfm.netlify.app)
 
 ## My process
