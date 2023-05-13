@@ -35,7 +35,7 @@ html{
     color: hsl(221, 100%, 96%);
 }
 
-.upper-box div{
+.upper-box div{   /* .circle   */
     width: 120px;
     padding: 18px;
 
@@ -83,7 +83,7 @@ html{
 }
 
 .summary-heading{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 800;
 
     color: hsl(224, 30%, 27%);
@@ -94,7 +94,7 @@ html{
 .lower-box{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 
     
@@ -107,7 +107,7 @@ html{
 
     width: 312px;
     padding: 16px 0px;
-    margin: 8px 0px;
+    margin: 8px auto;
 
     border-radius: 12px;
 }
@@ -180,7 +180,7 @@ html{
     background: hsl(224, 30%, 27%);
     
     width: 312px;
-    margin: 14px 0px 12px;
+    margin: 14px auto 18px;
     padding: 14px 20px;
     text-align: center;
     
@@ -194,7 +194,77 @@ html{
 
 
 @media only screen and (min-width: 1366px){
+
+
+    .main-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 22vh;
+    }
+    
     .upper-box{
-        /* background: aqua; */
+        width: 25%;
+        height: 400px;
+        
+        position: relative;
+        border-radius: 34px;
+        left: 2%;
+        
+        box-shadow: -6px 10px 14px 4px hsl(224, 30%, 27%, 0.08);
+    }
+
+    .result-heading{
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: hsl(221, 100%, 96%);
+        
+        margin: 36px 0px 30px;
+    }
+    
+    .upper-box div{   /* .circle   */
+            width: 184px;
+            padding: 44px;
+    }
+
+    .upper-box>div>span{
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: hsl(241, 100%, 89%);
+    }
+    .upper-box>div>span:first-of-type{
+        font-size: 5rem;
+        font-weight: 800;
+        color: white;
+    }
+
+    .great-heading{
+        font-size: 1.8rem;
+        font-weight: 600;
+
+        margin-top: 10px;
+    }
+
+    .info-text{
+        line-height: 1.5rem;
+    }
+    
+    .summary-heading{
+        margin: 12px 0px 4px 0px;
+    }
+
+    .lower-box{
+        /* background-color: #eeeeff; */
+        height: 400px;
+        
+        padding: 28px 28px 28px 52px;
+        border-radius: 0px 34px 34px 0px;
+        
+        box-shadow: 8px 10px 14px 4px hsl(224, 30%, 27%, 0.07);
+    }
+
+    .button{
+        margin: 4px auto 18px;
     }
 }
