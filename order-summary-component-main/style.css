@@ -5,12 +5,16 @@
 }
 
 body{
-    font-family: "Red Hat Display";
+    font-family: 'Red Hat Display';
     min-height: 100vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    /* background-color: white; */
+    background: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
 }
 
 html{
@@ -28,7 +32,7 @@ html{
     border-radius: 12px;
 
     background-color: hsl(0, 0%, 100%);
-    box-shadow: 2px 6px 12px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.1);
 
     overflow-x: hidden;
     overflow-y: hidden;
@@ -44,4 +48,124 @@ html{
     background-position: center;
     background-repeat: no-repeat;
 
+}
+
+.text-box{
+    margin: 22px 0px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 12px;
+}
+
+.desc{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    
+    text-align: center;
+    padding: 0px 46px;
+
+    color:  hsl(224, 23%, 55%);
+}
+
+.plan-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 22px;
+
+    background-color: hsl(225, 100%, 98%);
+}
+
+.plan-icon{
+    width: 38px;
+}
+
+.plan-desc{
+    margin: 0px 34px 0px 16px;
+}
+
+.desc-heading{
+    font-size: 1.2rem;
+    font-weight: 900;
+
+    color: hsl(223, 47%, 23%);
+}
+
+.desc-price{
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-link{
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    color: hsl(245, 75%, 52%);
+
+    transition: all 0.2s;
+}
+
+.plan-link:hover{
+    color: hsl(245, 75%, 52%, 0.6);
+    text-decoration: none;
+}
+
+.buttons-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment-btn{
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    padding: 10px 62px;
+    border-radius: 6px;
+    
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0px 6px 16px hsl(223, 47%, 23%, 0.4);
+
+    transition: all 0.2s;
+}
+
+.payment-btn:hover{
+    background-color: hsl(245, 75%, 52%, 0.6);
+}
+
+.cancel-btn{
+    margin: 16px 0px 32px;
+
+    font-size: 1.1rem;
+    font-weight: 900;
+    text-decoration: none;
+
+    color: hsl(224, 23%, 55%);
+
+    transition: all 0.2s;
+}
+
+.cancel-btn:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media only screen and (min-width: 1400px){
+    
 }
