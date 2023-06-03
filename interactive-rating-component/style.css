@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass';
+    background-color: hsl(216, 12%, 8%);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+html{
+    font-style: 12px;
+}
+
+.box{
+    background: hsl(213, 19%, 18%);
+    background: #1F262F;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 12px 30px;
+    padding: 18px 20px;
+
+    border-radius: 12px;
+}
+
+.box:first-child{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.star-icon{
+    background-color: rgba(77, 77, 77,.4);
+    background-color: #223036;
+    padding: 12px;
+
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+
+    margin-bottom: 16px;
+}
+
+.text-box{
+    margin-bottom: 20px;
+}
+
+.text-box h1{
+    font-size: 1.5rem;
+
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 8px;
+}
+
+.text-box p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+
+    color: hsl(217, 12%, 63%);
+}
+
+.rating-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.rating{
+    color: hsl(217, 12%, 63%);
+    /* background-color: hsla(0, 0%, 34%, 0.3); */
+    background-color: #252F37;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    height: 34px;
+    width: 34px;
+
+    border-radius: 55%;
+    padding: 2px;
+    margin: 0px 12px;
+
+    transition: all 0.2s;
+}
+
+.rating:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.selected{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+}
+
+.rating:first-of-type{
+    margin: 0px 12px 0px 0px;
+}
+
+.rating:last-of-type{
+    margin: 0px 0px 0px 12px;
+}
+
+.button{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    margin: 0 auto;
+    padding: 10px 100px;
+
+    border-radius: 50px;
+
+    transition: all 0.2s;
+}
+
+.button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
