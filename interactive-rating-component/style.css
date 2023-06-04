@@ -64,7 +64,7 @@ html{
 }
 
 .text-box p{
-    font-size: 0.8rem;
+    font-size: 0.86rem;
     line-height: 1.2rem;
 
     color: hsl(217, 12%, 63%);
@@ -89,12 +89,12 @@ html{
     font-size: 0.9rem;
     font-weight: 700;
 
-    height: 34px;
-    width: 34px;
+    height: 40px;
+    width: 40px;
 
     border-radius: 55%;
     padding: 2px;
-    margin: 0px 12px;
+    margin: 0px 10px;
 
     transition: all 0.2s;
 }
@@ -104,17 +104,17 @@ html{
     background-color: hsl(25, 97%, 53%);
 }
 
-.selected{
+.active{
     color: hsl(0, 0%, 100%);
     background-color: hsl(217, 12%, 63%);
 }
 
 .rating:first-of-type{
-    margin: 0px 12px 0px 0px;
+    margin: 0px 10px 0px 0px;
 }
 
 .rating:last-of-type{
-    margin: 0px 0px 0px 12px;
+    margin: 0px 0px 0px 10px;
 }
 
 .button{
@@ -128,7 +128,7 @@ html{
     font-weight: 700;
 
     margin: 0 auto;
-    padding: 10px 100px;
+    padding: 14px 108px;
 
     border-radius: 50px;
 
@@ -138,4 +138,92 @@ html{
 .button:hover{
     color: hsl(25, 97%, 53%);
     background-color: hsl(0, 0%, 100%);
+}
+
+.thanks-box{
+    background: hsl(213, 19%, 18%);
+    background: #1F262F;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 12px 30px;
+    padding: 18px 20px;
+
+    border-radius: 12px;
+}
+
+.illustration{
+    width: 60%;
+
+    margin-bottom: 20px;
+}
+
+.rated-msg{
+    background-color: rgba(77, 77, 77,.4);
+    color: hsl(25, 97%, 53%);
+
+    padding: 4px 8px;
+    font-size: 0.8rem;
+
+    border-radius: 20px;
+}
+
+.thanks-text{
+    font-size: 1.5rem;
+
+    color: hsl(0, 0%, 100%);
+    margin: 12px 0px 8px;
+}
+
+.thanks-msg{
+    font-size: 0.86rem;
+    line-height: 1.2rem;
+    text-align: center;
+
+    color: hsl(217, 12%, 63%);
+}
+
+.hidden{
+    display: none;
+}
+
+.attribution p{
+    color: hsl(217, 12%, 63%);
+}
+
+.attribution p a{
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 280px) and (max-width: 1300px){
+    .box{
+        width: 340px;
+        min-width: 280px;
+    }
+
+    .thanks-box{
+        margin: 12px 30px;
+        padding: 18px 20px;
+        width: 340px;
+        min-width: 320px;
+    }
+}
+
+
+@media only screen and (min-width: 1300px){
+    .box{
+        width: 340px;
+        min-width: 320px;
+    }
+
+    .thanks-box{
+        margin: 12px 30px;
+        padding: 18px 20px;
+        width: 340px;
+        min-width: 320px;
+    }
 }
