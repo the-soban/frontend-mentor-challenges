@@ -34,7 +34,7 @@ Users should be able to:
 
 
 ### **Links:**
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution on FrontendMentor: [My Solution](https://www.frontendmentor.io/solutions/interactive-rating-box-using-javascript-QqZgyaaSa4)
 - Live Site on Netlify: [Interactive Rating Box](https://js-rating-box.netlify.app)
 
 ## **My process:**
